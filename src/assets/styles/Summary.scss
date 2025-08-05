@@ -1,0 +1,21 @@
+.summary-section {
+  background: linear-gradient(to bottom, #0f0f0f, rgba(0, 0, 0, 0));
+  padding: 6rem 15% 4rem 15%;
+  text-align: center;
+  color: #ffffff;
+
+  h1 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+    color: #cfa7ff;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto;
+    color: #d1d5db;
+  }
+}

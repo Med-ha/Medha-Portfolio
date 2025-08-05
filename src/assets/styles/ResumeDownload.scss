@@ -1,0 +1,36 @@
+.resume-download-section {
+  text-align: center;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(207, 167, 255, 0.1);
+
+  h2 {
+    font-size: 1.8em;
+    color: #cfa7ff;
+    margin-bottom: 20px;
+  }
+
+  .download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #cfa7ff, #8c52ff);
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #8c52ff, #cfa7ff);
+      transform: translateY(-2px);
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

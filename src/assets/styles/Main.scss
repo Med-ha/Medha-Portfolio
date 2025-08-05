@@ -15,37 +15,71 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    \box-shadow: 0 0 12px rgba(255, 71, 209, 0.6);
 }
+
 
 .about-section .content {
     text-align: left;
-    z-index: 2;
+    z-index: 1;
 
-    .social_icons {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        color: white;
+.social_icons {
+  display: flex;
+  align-items: center;
+  gap: 18px; // Adjust spacing between items
+  color: white;
 
-        svg {
-            font-size: 1.8em;
-        }
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    font-size: 1.8em;
+  }
+
+  .location-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffffff;
+
+    svg {
+      font-size: 1.6em;
+      color: #ffffff;
     }
+
+    .location-text {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+}
+
 
     .mobile_social_icons {
         display: none;
     }
 
     p {
+	padding-top: 0px;
         font-size: 1.5em;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #ffffff; // Bright white
+  font-weight: 500; // Slightly bold
     }
 
     h1 {
-        font-size: 5em;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
+        padding-top: 0px;
+         font-size: 5rem;
+margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  bottom-padding: 0px;
+ 
     }
 }
 
@@ -58,9 +92,22 @@
 }
 
 .about p {
-    text-align: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    font-size: 2em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  color: #ffffff; // Bright white
+  font-weight: 600; // Slightly bold
+  
+    }
+
+.floating {
+  padding-top: 1000px;
+  position: absolute;
+  left: 20px;
+  width: 200px;
+  z-index: 1;
+  animation: floatLR 3s ease-in-out infinite
+  {/*filter: drop-shadow(0 0 8px #00f0ff);*/}
 }
 
 @media screen {
@@ -127,7 +174,12 @@
             flex-direction: row;
             gap: 10px;
             color: white;
-    
+    	    
+	     a {
+    display: flex;
+    align-items: center; // ✅ aligns the LinkedIn icon vertically
+  }
+
             svg {
                 font-size: 1.8em;
             }
@@ -152,4 +204,12 @@
             width: 100%;
         }
     }
+
+	
+@keyframes floatLR {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+
 }

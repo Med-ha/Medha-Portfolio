@@ -1,7 +1,14 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+
+.contact_wrapper {
+  padding: 60px 10%;
+  color: #fff;
+
+  h1 {
+    font-size: 2.6em;
+    margin-bottom: 40px;
+    color: #cfa7ff;
+    text-align: center;
+  }
 }
 
 .contact-form {
@@ -9,8 +16,10 @@
 
   button {
     float: right;
-    background-color: white;
+    background-color: #cfa7ff;
     color: #050f0b;
+    font-weight: bold;
+    transition: 0.3s ease;
   }
 
   button:hover {
@@ -19,7 +28,31 @@
   }
 
   fieldset {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 10px;
+  }
+
+  input, textarea,
+  .MuiInputBase-input,
+  .MuiOutlinedInput-input {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .MuiFormLabel-root {
+    color: #cfa7ff !important;
+    font-size: 1rem;
+  }
+
+  .MuiOutlinedInput-root {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(207, 167, 255, 0.1);
+
+    fieldset {
+      border-color: #cfa7ff !important;
+    }
   }
 }
 
@@ -32,6 +65,7 @@ label {
   display: flex;
   gap: 15px;
   padding-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .form-flex .MuiFormControl-root {
